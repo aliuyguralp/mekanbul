@@ -1,5 +1,5 @@
 var mongoose=require("mongoose");
-
+mongoose.model("mekan",mekanSema,"mekanlar");
 var saatSema = new mongoose.Schema({
     gunler:{type:String, required:true},
     acilis:String,
@@ -21,4 +21,3 @@ var mekanSema = new mongoose.Schema({
     saatler:[saatSema],
     yorumlar:[yorumSema],
 });
-mongoose.model("mekan",mekanSema,"mekanlar");
